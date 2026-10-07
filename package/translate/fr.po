@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: visualizer\n"
 "Report-Msgid-Bugs-To: https://github.com/luisbocanegra/plasma-audio-visualizer\n"
-"POT-Creation-Date: 2026-09-04 17:33+0000\n"
+"POT-Creation-Date: 2026-10-07 16:38+0800\n"
 "PO-Revision-Date: 2025-12-31 HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French <LL@li.org>\n"
@@ -32,22 +32,6 @@ msgstr "Visualiseur"
 #: ../contents/config/config.qml ../contents/ui/configCava.qml
 msgid "General"
 msgstr "Général"
-
-#: ../contents/ui/FullRepresentation.qml
-msgid "Oh no! Something went wrong"
-msgstr "Oh non ! Quelque chose s'est mal passé"
-
-#: ../contents/ui/FullRepresentation.qml ../contents/ui/configCava.qml ../contents/ui/main.qml
-msgid "Stop CAVA"
-msgstr "Arrêter CAVA"
-
-#: ../contents/ui/FullRepresentation.qml ../contents/ui/configCava.qml ../contents/ui/main.qml
-msgid "Start CAVA"
-msgstr "Démarrer CAVA"
-
-#: ../contents/ui/FullRepresentation.qml
-msgid "Copy to clipboard"
-msgstr "Copier dans le presse-papiers"
 
 #: ../contents/ui/components/ColorPickerGradientList.qml ../contents/ui/components/ColorPickerList.qml ../contents/ui/components/FormColors.qml
 msgid "Widget background"
@@ -248,6 +232,14 @@ msgstr "Saturation :"
 #: ../contents/ui/components/FormColors.qml
 msgid "Lightness:"
 msgstr "Luminosité :"
+
+#: ../contents/ui/configCava.qml ../contents/ui/FullRepresentation.qml ../contents/ui/main.qml
+msgid "Start CAVA"
+msgstr "Démarrer CAVA"
+
+#: ../contents/ui/configCava.qml ../contents/ui/FullRepresentation.qml ../contents/ui/main.qml
+msgid "Stop CAVA"
+msgstr "Arrêter CAVA"
 
 #: ../contents/ui/configCava.qml
 msgid "Framerate:"
@@ -518,6 +510,14 @@ msgid "seconds"
 msgstr "secondes"
 
 #: ../contents/ui/configGeneral.qml
+msgid "Hide when no media player:"
+msgstr "Masquer en l'absence de lecteur multimédia :"
+
+#: ../contents/ui/configGeneral.qml
+msgid "Show the widget based on media player status (MPRIS) instead of audio activity (other sounds won't show it). Stays visible while playback is paused. Takes precedence over auto-hide when idle."
+msgstr "Affiche le widget selon l'état des lecteurs multimédia (MPRIS) plutôt que selon l'activité audio (les autres sons ne l'affichent pas). Reste visible pendant la mise en pause de la lecture. Prend le pas sur le masquage automatique en cas d'inactivité."
+
+#: ../contents/ui/configGeneral.qml
 msgid "Desktop background:"
 msgstr "Arrière-plan du bureau :"
 
@@ -712,6 +712,14 @@ msgstr "Couleur des blocs inactifs"
 #: ../contents/ui/configVisualizer.qml
 msgid "Wave Fill Color"
 msgstr "Couleur de remplissage de la vague"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Oh no! Something went wrong"
+msgstr "Oh non ! Quelque chose s'est mal passé"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Copy to clipboard"
+msgstr "Copier dans le presse-papiers"
 
 #: ../contents/ui/main.qml
 msgid "Show support information"

@@ -134,7 +134,7 @@ Item {
                 return values;
             }
             debugMode: Plasmoid.configuration.debugMode
-            visible: !cava.hasError && !cava.idle
+            visible: !cava.hasError && (!cava.idle || main.hideWhenNoMedia)
             fixVertical: !main.horizontal
             Layout.preferredWidth: {
                 if (circleMode) {

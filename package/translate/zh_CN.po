@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: visualizer\n"
 "Report-Msgid-Bugs-To: https://github.com/luisbocanegra/plasma-audio-"
 "visualizer\n"
-"POT-Creation-Date: 2026-09-04 17:33+0000\n"
+"POT-Creation-Date: 2026-10-07 16:38+0800\n"
 "PO-Revision-Date: 2025-11-25 00:39+0800\n"
 "Last-Translator: BCTaoTao <165790460+BCTaoTao@users.noreply.github.com>\n"
 "Language-Team: \n"
@@ -34,24 +34,6 @@ msgstr "可视化器"
 #: ../contents/config/config.qml ../contents/ui/configCava.qml
 msgid "General"
 msgstr "常规"
-
-#: ../contents/ui/FullRepresentation.qml
-msgid "Oh no! Something went wrong"
-msgstr "糟糕！出错了"
-
-#: ../contents/ui/FullRepresentation.qml ../contents/ui/configCava.qml
-#: ../contents/ui/main.qml
-msgid "Stop CAVA"
-msgstr "停止 CAVA"
-
-#: ../contents/ui/FullRepresentation.qml ../contents/ui/configCava.qml
-#: ../contents/ui/main.qml
-msgid "Start CAVA"
-msgstr "启动 CAVA"
-
-#: ../contents/ui/FullRepresentation.qml
-msgid "Copy to clipboard"
-msgstr "复制到剪贴板"
 
 #: ../contents/ui/components/ColorPickerGradientList.qml
 #: ../contents/ui/components/ColorPickerList.qml
@@ -260,6 +242,16 @@ msgstr "饱和度："
 msgid "Lightness:"
 msgstr "亮度："
 
+#: ../contents/ui/configCava.qml ../contents/ui/FullRepresentation.qml
+#: ../contents/ui/main.qml
+msgid "Start CAVA"
+msgstr "启动 CAVA"
+
+#: ../contents/ui/configCava.qml ../contents/ui/FullRepresentation.qml
+#: ../contents/ui/main.qml
+msgid "Stop CAVA"
+msgstr "停止 CAVA"
+
 #: ../contents/ui/configCava.qml
 msgid "Framerate:"
 msgstr "帧率："
@@ -394,11 +386,11 @@ msgstr "对于FIFO，'source'为FIFO文件路径。"
 
 #: ../contents/ui/configCava.qml
 msgid ""
-"For shmem 'source' will be /squeezelite-AA:BB:CC:DD:EE:FF where 'AA:BB:CC:DD:"
-"EE:FF' will be squeezelite's MAC address."
+"For shmem 'source' will be /squeezelite-AA:BB:CC:DD:EE:FF where "
+"'AA:BB:CC:DD:EE:FF' will be squeezelite's MAC address."
 msgstr ""
-"对于shmem，'source'为/squeezelite-AA:BB:CC:DD:EE:FF，其中'AA:BB:CC:DD:EE:"
-"FF'为squeezelite的MAC地址。"
+"对于shmem，'source'为/squeezelite-AA:BB:CC:DD:EE:FF，其"
+"中'AA:BB:CC:DD:EE:FF'为squeezelite的MAC地址。"
 
 #: ../contents/ui/configCava.qml
 msgid ""
@@ -575,6 +567,19 @@ msgstr "在"
 #: ../contents/ui/configGeneral.qml
 msgid "seconds"
 msgstr "秒后"
+
+#: ../contents/ui/configGeneral.qml
+msgid "Hide when no media player:"
+msgstr "无媒体播放器时隐藏:"
+
+#: ../contents/ui/configGeneral.qml
+msgid ""
+"Show the widget based on media player status (MPRIS) instead of audio "
+"activity (other sounds won't show it). Stays visible while playback is "
+"paused. Takes precedence over auto-hide when idle."
+msgstr ""
+"根据媒体播放器状态(MPRIS)而非音频活动决定是否显示(其他声音不会使其显示)。播放"
+"暂停期间保持可见。优先于“空闲时自动隐藏”。"
 
 #: ../contents/ui/configGeneral.qml
 msgid "Desktop background:"
@@ -779,6 +784,14 @@ msgstr "非活动块颜色"
 #: ../contents/ui/configVisualizer.qml
 msgid "Wave Fill Color"
 msgstr "波形填充颜色"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Oh no! Something went wrong"
+msgstr "糟糕！出错了"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Copy to clipboard"
+msgstr "复制到剪贴板"
 
 #: ../contents/ui/main.qml
 msgid "Show support information"

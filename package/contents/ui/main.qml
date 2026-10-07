@@ -4,6 +4,7 @@ import org.kde.kirigami as Kirigami
 
 import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.plasmoid
+import org.kde.plasma.private.mpris as Mpris
 import "code/enum.js" as Enum
 import "code/utils.js" as Utils
 
@@ -52,6 +53,7 @@ PlasmoidItem {
     property int asciiMaxRange: [Enum.Orientation.Left, Enum.Orientation.Right].includes(Plasmoid.configuration.orientation) ? main.width : main.height
     property var logger: Logger.create(Plasmoid.configuration.debugMode ? LoggingCategory.Debug : LoggingCategory.Info)
     property bool hideWhenIdle: Plasmoid.configuration.hideWhenIdle
+    property bool hideWhenNoMedia: Plasmoid.configuration.hideWhenNoMedia
 
     property bool pauseFullScreen: Plasmoid.configuration.pauseOnFullScreenWindow
     property bool pauseMaximized: Plasmoid.configuration.pauseOnMaximizedWindow
@@ -66,7 +68,7 @@ PlasmoidItem {
             if (Plasmoid.status === PlasmaCore.Types.RequiresAttentionStatus) {
                 return;
             }
-            Plasmoid.status = (hideWhenIdle && cava.idle || !cava.running) && !Plasmoid.expanded && !editMode && !cava.hasError ? PlasmaCore.Types.HiddenStatus : PlasmaCore.Types.ActiveStatus;
+            Plasmoid.status = ((hideWhenNoMedia ? !mediaReady : hideWhenIdle && cava.idle) || !cava.running) && !Plasmoid.expanded && !editMode && !cava.hasError ? PlasmaCore.Types.HiddenStatus : PlasmaCore.Types.ActiveStatus;
             logger.debug("Plasmoid.status:", Plasmoid.status);
         }, main);
     }
@@ -196,6 +198,24 @@ PlasmoidItem {
         id: tasksModel
         screenGeometry: Plasmoid.containment.screenGeometry
     }
+
+    // Same model plasmusic-toolbar watches, so both widgets show/hide on identical signals.
+    readonly property bool mediaReady: {
+        const player = mpris2Model.currentPlayer;
+        // Chromium-based players stay registered on MPRIS after the media tab is closed,
+        // without clearing their metadata. Requiring actual metadata filters them out.
+        return !!(player && (player.track || player.artist || player.album));
+    }
+    Mpris.Mpris2Model {
+        id: mpris2Model
+        onRowsInserted: currentIndex = 0
+        onRowsRemoved: currentIndex = 0
+    }
+    onMediaReadyChanged: {
+        logger.debug("mediaReady:", mediaReady);
+        updateStatus();
+    }
+    onHideWhenNoMediaChanged: updateStatus()
 
     onPauseByWindowChanged: {
         if (Plasmoid.configuration._stopCava) {

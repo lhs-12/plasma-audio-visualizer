@@ -9,6 +9,7 @@ KCM.SimpleKCM {
     id: root
     property alias cfg_desktopWidgetBg: desktopWidgetBackgroundRadio.value
     property alias cfg_hideWhenIdle: hideWhenIdleCheckbox.checked
+    property alias cfg_hideWhenNoMedia: hideWhenNoMediaCheckbox.checked
     property int cfg_visualizerStyle
     property string cfg_barColors
     property string cfg_waveFillColors
@@ -23,6 +24,7 @@ KCM.SimpleKCM {
 
         RowLayout {
             Kirigami.FormData.label: i18n("Auto-hide when idle:")
+            enabled: !hideWhenNoMediaCheckbox.checked
             CheckBox {
                 id: hideWhenIdleCheckbox
             }
@@ -37,6 +39,16 @@ KCM.SimpleKCM {
             }
             Label {
                 text: i18n("seconds")
+            }
+        }
+
+        RowLayout {
+            Kirigami.FormData.label: i18n("Hide when no media player:")
+            CheckBox {
+                id: hideWhenNoMediaCheckbox
+            }
+            Kirigami.ContextualHelpButton {
+                toolTipText: i18n("Show the widget based on media player status (MPRIS) instead of audio activity (other sounds won't show it). Stays visible while playback is paused. Takes precedence over auto-hide when idle.")
             }
         }
 

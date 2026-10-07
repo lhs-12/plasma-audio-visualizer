@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: visualizer\n"
 "Report-Msgid-Bugs-To: https://github.com/luisbocanegra/plasma-audio-"
 "visualizer\n"
-"POT-Creation-Date: 2026-09-04 17:33+0000\n"
+"POT-Creation-Date: 2026-10-07 16:38+0800\n"
 "PO-Revision-Date: 2025-11-07 15:03+0000\n"
 "Last-Translator: Mathias Mårtensson <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,24 +34,6 @@ msgstr "Visualiserare"
 #: ../contents/config/config.qml ../contents/ui/configCava.qml
 msgid "General"
 msgstr "Allmänt"
-
-#: ../contents/ui/FullRepresentation.qml
-msgid "Oh no! Something went wrong"
-msgstr "Åh nej! Något gick fel"
-
-#: ../contents/ui/FullRepresentation.qml ../contents/ui/configCava.qml
-#: ../contents/ui/main.qml
-msgid "Stop CAVA"
-msgstr "Stoppa CAVA"
-
-#: ../contents/ui/FullRepresentation.qml ../contents/ui/configCava.qml
-#: ../contents/ui/main.qml
-msgid "Start CAVA"
-msgstr "Starta CAVA"
-
-#: ../contents/ui/FullRepresentation.qml
-msgid "Copy to clipboard"
-msgstr "Kopiera till klippbordet"
 
 #: ../contents/ui/components/ColorPickerGradientList.qml
 #: ../contents/ui/components/ColorPickerList.qml
@@ -263,6 +245,16 @@ msgstr "Mättnad:"
 msgid "Lightness:"
 msgstr "Ljusstyrka:"
 
+#: ../contents/ui/configCava.qml ../contents/ui/FullRepresentation.qml
+#: ../contents/ui/main.qml
+msgid "Start CAVA"
+msgstr "Starta CAVA"
+
+#: ../contents/ui/configCava.qml ../contents/ui/FullRepresentation.qml
+#: ../contents/ui/main.qml
+msgid "Stop CAVA"
+msgstr "Stoppa CAVA"
+
 #: ../contents/ui/configCava.qml
 msgid "Framerate:"
 msgstr "Bildfrekvens:"
@@ -402,11 +394,11 @@ msgstr "För fifo kommer 'source' att vara sökvägen till fifo-filen."
 
 #: ../contents/ui/configCava.qml
 msgid ""
-"For shmem 'source' will be /squeezelite-AA:BB:CC:DD:EE:FF where 'AA:BB:CC:DD:"
-"EE:FF' will be squeezelite's MAC address."
+"For shmem 'source' will be /squeezelite-AA:BB:CC:DD:EE:FF where "
+"'AA:BB:CC:DD:EE:FF' will be squeezelite's MAC address."
 msgstr ""
-"För shmem kommer 'source' att vara /squeezelite-AA:BB:CC:DD:EE:FF där 'AA:BB:"
-"CC:DD:EE:FF' är squeezelites MAC-adress."
+"För shmem kommer 'source' att vara /squeezelite-AA:BB:CC:DD:EE:FF där "
+"'AA:BB:CC:DD:EE:FF' är squeezelites MAC-adress."
 
 #: ../contents/ui/configCava.qml
 msgid ""
@@ -430,8 +422,8 @@ msgid ""
 "For jack 'source' will be the name of the JACK server to connect to, e.g. "
 "'foobar'. Default: 'default'."
 msgstr ""
-"För jack kommer 'source' att vara namnet på JACK-servern att ansluta till, t."
-"ex. 'foobar'. Standard: 'default'."
+"För jack kommer 'source' att vara namnet på JACK-servern att ansluta till, "
+"t.ex. 'foobar'. Standard: 'default'."
 
 #: ../contents/ui/configCava.qml
 msgid "Sample rate:"
@@ -591,6 +583,21 @@ msgstr "Efter"
 #: ../contents/ui/configGeneral.qml
 msgid "seconds"
 msgstr "sekunder"
+
+#: ../contents/ui/configGeneral.qml
+msgid "Hide when no media player:"
+msgstr "Dölj när ingen mediaspelare är aktiv:"
+
+#: ../contents/ui/configGeneral.qml
+msgid ""
+"Show the widget based on media player status (MPRIS) instead of audio "
+"activity (other sounds won't show it). Stays visible while playback is "
+"paused. Takes precedence over auto-hide when idle."
+msgstr ""
+"Visar widgeten utifrån mediaspelarens status (MPRIS) i stället för "
+"ljudaktivitet (andra ljud visar den inte). Förblir synlig medan "
+"uppspelningen är pausad. Har företräde framför att döljas automatiskt vid "
+"inaktivitet."
 
 #: ../contents/ui/configGeneral.qml
 msgid "Desktop background:"
@@ -796,6 +803,14 @@ msgstr "Inaktiv blockfärg"
 #: ../contents/ui/configVisualizer.qml
 msgid "Wave Fill Color"
 msgstr "Vågfyllningsfärg"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Oh no! Something went wrong"
+msgstr "Åh nej! Något gick fel"
+
+#: ../contents/ui/FullRepresentation.qml
+msgid "Copy to clipboard"
+msgstr "Kopiera till klippbordet"
 
 #: ../contents/ui/main.qml
 msgid "Show support information"
