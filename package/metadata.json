@@ -15,6 +15,7 @@
         "Description[ru]": "Аудио-визуализатор на базе CAVA",
         "Description[sv]": "Ljudvisualisering som använder CAVA",
         "Description[zh_CN]": "基于CAVA的音频可视化器",
+        "Description[zh_TW]": "基於CAVA的音訊視覺化器",
         "EnabledByDefault": false,
         "Icon": "waveform-symbolic",
         "Id": "luisbocanegra.audio.visualizer",

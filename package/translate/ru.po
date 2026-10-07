@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: visualizer\n"
 "Report-Msgid-Bugs-To: https://github.com/luisbocanegra/plasma-audio-"
 "visualizer\n"
-"POT-Creation-Date: 2026-10-07 16:38+0800\n"
+"POT-Creation-Date: 2026-10-07 14:31+0800\n"
 "PO-Revision-Date: 2026-01-08 11:33+0200\n"
 "Last-Translator: Mykhailo Aleksieiev <mishanya.bigimot@gmail.com>\n"
 "Language-Team: \n"
@@ -277,6 +277,10 @@ msgid ""
 "ong as the bars don't peak. 0 = off, 1 = normal, 2..n = more "
 "aggressive<br>Increase to make sensitivity increase even faster."
 msgstr ""
+"Пытается снижать чувствительность, когда столбики достигают пика, и медленно "
+"повышает её, пока столбики не достигают пика. 0 = выключено, 1 = нормально, "
+"2..n = агрессивнее<br>Увеличьте значение, чтобы чувствительность росла ещё "
+"быстрее."
 
 #: ../contents/ui/configCava.qml
 msgid "Sensitivity:"
@@ -516,13 +520,15 @@ msgstr "Отображать частоты наоборот"
 
 #: ../contents/ui/configCava.qml
 msgid "Waveform:"
-msgstr ""
+msgstr "Форма волны:"
 
 #: ../contents/ui/configCava.qml
 msgid ""
 "Show waveform instead of frequency spectrum. Takes precedence over the "
 "simulate waveform option."
 msgstr ""
+"Показывать форму волны вместо спектра частот. Имеет приоритет над параметром "
+"имитации формы волны."
 
 #: ../contents/ui/configCava.qml
 msgid "Smoothing"
@@ -675,19 +681,19 @@ msgstr "Блоки"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Shape:"
-msgstr ""
+msgstr "Форма:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Curve"
-msgstr ""
+msgstr "Кривая"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Square"
-msgstr ""
+msgstr "Квадрат"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Triangle"
-msgstr ""
+msgstr "Треугольник"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Fill wave"
@@ -695,7 +701,7 @@ msgstr "Заполнить волну"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Pin down first and last values"
-msgstr ""
+msgstr "Закреплять первое и последнее значения"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Draw inactive blocks"
@@ -711,7 +717,7 @@ msgstr "Размер круга:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Fill circle:"
-msgstr ""
+msgstr "Заполнение круга:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Top"
@@ -739,7 +745,7 @@ msgstr "Фиксированная %1:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Minimum %1:"
-msgstr ""
+msgstr "Минимум %1:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Fill panel thickness:"
@@ -747,7 +753,7 @@ msgstr "Заполнить толщину панели:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Centered wave:"
-msgstr ""
+msgstr "Волна по центру:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Centered bars:"
@@ -755,17 +761,19 @@ msgstr "Центрированные столбики:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "This option is ignored if CAVA waveform option is enabled."
-msgstr ""
+msgstr "Этот параметр игнорируется, если включён параметр формы волны CAVA."
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Simulate a waveform:"
-msgstr ""
+msgstr "Имитировать форму волны:"
 
 #: ../contents/ui/configVisualizer.qml
 msgid ""
 "Simulates a waveform by alternating values up and down. This option is "
 "ignored if CAVA waveform option is enabled."
 msgstr ""
+"Имитирует форму волны, поочерёдно повышая и понижая значения. Этот параметр "
+"игнорируется, если включён параметр формы волны CAVA."
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Rounded bars:"

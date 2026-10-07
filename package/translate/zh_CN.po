@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: visualizer\n"
 "Report-Msgid-Bugs-To: https://github.com/luisbocanegra/plasma-audio-"
 "visualizer\n"
-"POT-Creation-Date: 2026-10-07 16:38+0800\n"
+"POT-Creation-Date: 2026-10-07 14:31+0800\n"
 "PO-Revision-Date: 2025-11-25 00:39+0800\n"
 "Last-Translator: BCTaoTao <165790460+BCTaoTao@users.noreply.github.com>\n"
 "Language-Team: \n"
@@ -274,6 +274,8 @@ msgid ""
 "ong as the bars don't peak. 0 = off, 1 = normal, 2..n = more "
 "aggressive<br>Increase to make sensitivity increase even faster."
 msgstr ""
+"当频谱柱达到峰值时尝试降低灵敏度，未达峰值时缓慢提升。0 = 关闭，1 = 正常，"
+"2..n = 更激进<br>增大该值可使灵敏度提升更快。"
 
 #: ../contents/ui/configCava.qml
 msgid "Sensitivity:"
@@ -504,13 +506,13 @@ msgstr "以相反顺序显示频率"
 
 #: ../contents/ui/configCava.qml
 msgid "Waveform:"
-msgstr ""
+msgstr "波形："
 
 #: ../contents/ui/configCava.qml
 msgid ""
 "Show waveform instead of frequency spectrum. Takes precedence over the "
 "simulate waveform option."
-msgstr ""
+msgstr "显示波形而非频谱。优先于模拟波形选项。"
 
 #: ../contents/ui/configCava.qml
 msgid "Smoothing"
@@ -570,7 +572,7 @@ msgstr "秒后"
 
 #: ../contents/ui/configGeneral.qml
 msgid "Hide when no media player:"
-msgstr "无媒体播放器时隐藏:"
+msgstr "无媒体播放器时隐藏："
 
 #: ../contents/ui/configGeneral.qml
 msgid ""
@@ -653,19 +655,19 @@ msgstr "块状"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Shape:"
-msgstr ""
+msgstr "形状："
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Curve"
-msgstr ""
+msgstr "曲线"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Square"
-msgstr ""
+msgstr "方块"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Triangle"
-msgstr ""
+msgstr "三角"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Fill wave"
@@ -673,7 +675,7 @@ msgstr "填充波形"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Pin down first and last values"
-msgstr ""
+msgstr "固定首尾数值"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Draw inactive blocks"
@@ -689,7 +691,7 @@ msgstr "内环大小"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Fill circle:"
-msgstr ""
+msgstr "填充圆："
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Top"
@@ -717,7 +719,7 @@ msgstr "固定%1："
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Minimum %1:"
-msgstr ""
+msgstr "最小 %1："
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Fill panel thickness:"
@@ -725,7 +727,7 @@ msgstr "填充面板厚度："
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Centered wave:"
-msgstr ""
+msgstr "居中波形："
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Centered bars:"
@@ -733,17 +735,17 @@ msgstr "居中柱："
 
 #: ../contents/ui/configVisualizer.qml
 msgid "This option is ignored if CAVA waveform option is enabled."
-msgstr ""
+msgstr "启用 CAVA 波形选项时，此选项将被忽略。"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Simulate a waveform:"
-msgstr ""
+msgstr "模拟波形："
 
 #: ../contents/ui/configVisualizer.qml
 msgid ""
 "Simulates a waveform by alternating values up and down. This option is "
 "ignored if CAVA waveform option is enabled."
-msgstr ""
+msgstr "通过数值上下交替模拟波形。启用 CAVA 波形选项时，此选项将被忽略。"
 
 #: ../contents/ui/configVisualizer.qml
 msgid "Rounded bars:"
